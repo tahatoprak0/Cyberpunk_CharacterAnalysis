@@ -12,7 +12,7 @@ def load_character_data(filepath):
 # Örnek input: df, n=2
 # Örnek output: DataFrame -> ["V", "Johnny Silverhand"]
 def get_top_strength_characters(df, n=5):
-    return df.head(n)
+    return df.sort_values(by = 'strength',ascending = False).head(n)
 
 # 3. Tüm karakterlerin sayısal ortalama değerlerini (strength, intelligence, agility, health) hesaplar.
 # Örnek input: df
@@ -34,7 +34,7 @@ def filter_characters_by_faction(df, faction_name):
 # Örnek output: df['health']: [1.0, 0.95, 0.85]
 def normalize_health_points(df):
     df['health'] = df['health'] / df['health'].max()
-    return df['helath'].tolist()
+    return df
 
 # 6. Sayısal sütunları NumPy matrisine dönüştürür.
 # Örnek input: df
