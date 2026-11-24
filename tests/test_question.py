@@ -12,7 +12,7 @@ from tasks.task_manager import *
 # Kaizu ID'n — Profile → Settings → User ID
 # Skorunun Kaizu'ya gitmesi için 0 yerine kendi ID'ni yaz.
 # ─────────────────────────────────────────────
-USER_ID = 0  # ← BURAYI DEĞİŞTİR
+USER_ID = 609  # ← BURAYI DEĞİŞTİR
 
 
 @pytest.fixture
